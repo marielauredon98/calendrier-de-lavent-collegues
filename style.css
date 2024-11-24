@@ -30,6 +30,11 @@ body {
     justify-content: center;
   }
   
+  @media (max-width: 768px) {
+    .calendar {
+        grid-template-columns: repeat(4, 80px); 
+    }
+  }
   .day {
     width: 80px;
     height: 80px;
