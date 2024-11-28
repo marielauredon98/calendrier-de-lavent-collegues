@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
       10: "Partage ton film de Noël préféré.",
       11: "Change de place avec un collègue pendant 1 heure.",
       12: "Mets un fond d'écran de Noël.",
-      13: "Dis quelque chose de positif à la prochaine personne qui t'envoie un Zoom.",
+      13: "Dis quelque chose de positif dans ton prochain Zoom.",
       14: "Tu es assidu(e). Bravo ! Passe un bon week-end.",
       15: "Demain, porte du rouge ou du blanc.",
       16: "Apporte un accessoire de Noël.",
