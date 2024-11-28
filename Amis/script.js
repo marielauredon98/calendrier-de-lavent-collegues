@@ -5,30 +5,30 @@ document.addEventListener("DOMContentLoaded", function() {
     // Dictionnaire des messages pour chaque jour
     const messages = {
       1: "Bienvenue dans ce calendrier de l'Avent !",
-      2: "Complimentez un collègue aujourd'hui.",
-      3: "Essaie de parler en rime toute la journée.",
-      4: "Echange un objet de ton bureau avec un collègue pour la journée.",
-      5: "Écoute une chanson de Noël et chante avec.",
-      6: "Partage un souvenir amusant de Noël avec l'équipe.",
-      7: "Prépare-toi à recevoir un compliment !",
-      8: "Décore ton bureau avec un objet festif.",
-      9: "Fais une pause thé et partage une blague.",
-      10: "Envoye un message gentil à un collègue.",
-      11: "Partage ta recette de Noël préférée.",
-      12: "Faites une mini compétition de décorations.",
-      13: "Écris un poème de Noël pour tes collègues.",
-      14: "Surprise : Prends un moment pour t'arrêter et respirer.",
-      15: "Partage un secret de Noël avec ton voisin de bureau.",
-      16: "Raconte une histoire de Noël de ton enfance.",
-      17: "Faites un compliment sincère à trois personnes.",
-      18: "Ouvre une fenêtre virtuelle et laisse entrer la magie !",
-      19: "Partage une idée de cadeau original.",
-      20: "Mets un accessoire de Noël et fais un défilé.",
-      21: "Propose un défi de Noël à tes collègues.",
-      22: "Écoute ton chanson de Noël favorite aujourd'hui.",
-      23: "Raconte une anecdote sur ton réveillon de Noël.",
-      24: "Détends-toi et profite de l'instant présent.",
-      25: "Joyeux Noël ! Partage tes vœux avec l'équipe."
+      2: "Raconte une blague sur Whatsapp.",
+      3: "Essaie de placer quelques rimes dans tes phrases aujourd'hui.",
+      4: "Poste du rouge en statut.",
+      5: "Partage ta chanson de Noël préférée.",
+      6: "Complète la phrase : Vive le ven... Vive le ven... Vive le ...",
+      7: "Comment s’appelle le gâteau le plus dur au monde ? (réponse demain)",
+      8: "La bûche. Ah ah !",
+      9: "Dessine ton plus beau flocon de neige et partage-le.",
+      10: "Partage ton film de Noël préféré.",
+      11: "Mets l'image de quelque chose que tu aimes en photo de profil.",
+      12: "Mets un fond d'écran de Noël sur ton téléphone.",
+      13: "Dis quelque chose de positif lors de ta prochaine conversation whatsapp.",
+      14: "Tu es assidu(e). Bravo ! Passe un bon week-end.",
+      15: "Demain, porte du rouge ou du blanc.",
+      16: "Porte un accessoire de Noël.",
+      17: "Dessine ton plus beau sapin de Noël et partage-le.",
+      18: "Poste du vert en statut.",
+      19: "Envoie un coeur à la première personne à laquelle tu penses.",
+      20: "Partage un message de Noël dans ton statut.",
+      21: "Pourquoi le Père Noël n'a pas été à ton école ? (réponse demain)",
+      22: "Parce qu'il voulait rester Santa Claus (sans ta classe).",
+      23: "As-tu fini d'emballer les cadeaux ?",
+      24: "J-1... Bon réveillon !",
+      25: "Joyeux Noël !"
     };
 
     const days = [1, 4, 18, 10, 6, 23, 3, 12, 16, 5, 19, 2, 25, 7, 11, 13, 8, 21, 9, 14, 24, 17, 20, 15, 22]
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       // Gérer le verrouillage des jours
       if (dayi > today) {
-        day.classList.add("locked");
+        day.classList.add("unlocked");
       } else {
         day.classList.add("unlocked");
       }
