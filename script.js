@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const today = new Date().getDate(); // Obtient le jour actuel
+    const today = new Date().getDate();
     const calendar = document.querySelector(".calendar");
   
     // Dictionnaire des messages pour chaque jour
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       const front = document.createElement("div");
       front.classList.add("front");
-      front.style.backgroundImage = "url('cadeau.png')"; // Remplace avec l'image de ton choix
+      front.style.backgroundImage = "url('cadeau.png')";
       const dayNumber = document.createElement("span");
       dayNumber.classList.add("day-number");
       dayNumber.textContent = dayi;
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Ajouter l'événement de clic
       day.addEventListener("click", function() {
         if (date <= today) {
-          day.classList.toggle("flipped"); // Retourne la carte
+          day.classList.toggle("flipped");
           let flippedCards = JSON.parse(localStorage.getItem("flippedCards")) || [];
           if (day.classList.contains("flipped")) {
             flippedCards.push(dayi);
@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
           }
           localStorage.setItem("flippedCards", JSON.stringify(flippedCards));
         } else {
-          day.classList.add("shake"); // Effet de shake
-          setTimeout(() => day.classList.remove("shake"), 500); // Supprime l'effet
+          day.classList.add("shake");
+          setTimeout(() => day.classList.remove("shake"), 500);
         }
       });
     }
