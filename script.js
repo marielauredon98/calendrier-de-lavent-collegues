@@ -79,7 +79,10 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   
       // Ajouter l'événement de clic
-      day.addEventListener("click", function() {
+       day.addEventListener("click", function() {
+      const clickedDay = this.dataset.day;
+      const date = new Date(`2024-12-${clickedDay < 10 ? '0' : ''}${clickedDay}`);
+        if (date <= today) {
         if (date <= today) {
           day.classList.toggle("flipped");
           let flippedCards = JSON.parse(localStorage.getItem("flippedCards")) || [];
