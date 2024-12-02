@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const today = new Date().getDate();
+    const today = new Date();
     const calendar = document.querySelector(".calendar");
   
     // Dictionnaire des messages pour chaque jour
@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
        day.addEventListener("click", function() {
       const clickedDay = this.dataset.day;
       const date = new Date(`2024-12-${clickedDay < 10 ? '0' : ''}${clickedDay}`);
-        if (date <= today) {
         if (date <= today) {
           day.classList.toggle("flipped");
           let flippedCards = JSON.parse(localStorage.getItem("flippedCards")) || [];
