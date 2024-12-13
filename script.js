@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
       12: "Mets un fond d'écran de Noël.",
       13: "Dis quelque chose de positif dans ton prochain Zoom.",
       14: "Tu es assidu(e). Bravo ! Passe un bon week-end.",
-      15: "Demain, porte du rouge ou du blanc.",
-      16: "Apporte un accessoire de Noël.",
+      15: "Demain, apporte un accessoire de Noël.",
+      16: "Demain, porte du rouge ou du blanc.",
       17: "Dessine ton plus beau sapin de Noël et affiche-le.",
       18: "Keep calm and mise en prod.",
       19: "Valide une Merge Request.",
@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
        day.addEventListener("click", function() {
       const clickedDay = this.dataset.day;
       const date = new Date(`2024-12-${clickedDay < 10 ? '0' : ''}${clickedDay}`);
-        if (date <= today) {
         if (date <= today) {
           day.classList.toggle("flipped");
           let flippedCards = JSON.parse(localStorage.getItem("flippedCards")) || [];
