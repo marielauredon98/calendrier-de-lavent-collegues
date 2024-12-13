@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
       11: "Change de place avec un collègue pendant 1 heure.",
       12: "Mets un fond d'écran de Noël.",
       13: "Dis quelque chose de positif dans ton prochain Zoom.",
-      14: "Tu es assidu(e). Bravo ! Passe un bon week-end.",
+      14: "Tape 'Do a barrel roll' sur google.",
       15: "Demain, apporte un accessoire de Noël.",
       16: "Demain, porte du rouge ou du blanc.",
       17: "Dessine ton plus beau sapin de Noël et affiche-le.",
