@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const today = new Date().getDate();
+    const today = new Date();
     const calendar = document.querySelector(".calendar");
   
     // Dictionnaire des messages pour chaque jour
