@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
       22: "Parce qu'il voulait rester Santa Claus (sans ta classe).",
       23: "En retard sur les cadeaux ? 5 pompes : Danse de la joie.",
       24: "J-1... Bon réveillon !",
-      25: "Joyeux Noël !"
+      25: "Bah... j'emmène les chocos lundi 06 (pour le chocoblast d'hier)"
     };
 
     const days = [1, 4, 18, 10, 6, 23, 3, 12, 16, 5, 19, 2, 25, 7, 11, 13, 8, 21, 9, 14, 24, 17, 20, 15, 22]
